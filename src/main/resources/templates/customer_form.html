@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Customer</title>
+</head>
+<body>
+
+
+	<form method="POST" data-th-object="${customer}">
+		<div class="form-group">
+			<input type="hidden" class="form-control" name="id" 
+					data-th-value="${customer.id}"
+					id="id" placeholder="Id">
+		  </div>
+		<div class="form-group">
+		  <label for="firstName">First Name:</label>
+		  <input type="text" class="form-control" name="firstName" 
+		  		data-th-value="${customer.firstName}"
+		  		id="firstName" placeholder="First Name">
+		</div>
+		<div class="form-group">
+			<label for="lastName">Last Name:</label>
+			<input type="text" class="form-control" name="lastName" 
+					data-th-value="${customer.lastName}"
+					id="lastName" placeholder="First Name">
+		  </div>
+		  <div class="form-group">
+			<label for="email">First Name:</label>
+			<input type="text" class="form-control" name="email" 
+					data-th-value="${customer.email}"
+					id="email" placeholder="email address">
+		  </div>
+		  <div class="btn-ok">
+			  <button type="submit">Ok</button>
+		  </div>
+	</form>
+</body>
+</html>
